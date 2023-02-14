@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font awesome: CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <style>
+        .responsive_design_div {
+            background-color: blue;
+            color: white;
+            margin-bottom: 2%;
+            padding: 2%;
+            float: left;
+            margin-right: 2px;
+            width: 100%;
+        }
+
+        @media screen and (min-width: 600px) {
+            .responsive_design_div {
+                background-color: rgb(94, 216, 13);
+                width: 49%;
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            .responsive_design_div {
+                background-color: rgb(36, 80, 6);
+                width: 32%;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .responsive_design_div {
+                background-color: rgb(42, 46, 39);
+                width: 24%;
+            }
+        }
+    </style>
+</head>
+
+<body class="ms-2 me-3">
+
+    <br><br><br><br>
+
+    <!-- Responsive design -->
+
+    <div class="responsive_design_div">1.alan</div>
+    <div class="responsive_design_div">2.alan</div>
+    <div class="responsive_design_div">3.alan</div>
+    <div class="responsive_design_div">4.alan</div>
+
+    <br><br><br><br>
+    <!-- FORM -->
+    <!-- 
+    Cv havuz Formu tasarlıyalım.
+    Attributes: ID,Name,Surname,Tel number, Email address, About Me
+    Aşağıdaki required,focus, id, name öncelikle kendimiz yapmaya çalışalım Amaçımız ne kadar bilgi aklımızda kalmış onu test edelim.
+     -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1 class="text-center display-3 text-uppercase">Register</h1>
+                <form action="deneme.html" method="post" id="form_register" name="form_register">
+                    <div class="form-group">
+                        <label for="name">Adınız:</label>
+                        <input type="text" class="form-control mb-3" name="surname" id="name" placeholder="name"
+                            autofocus="true" required="true" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="surname">Soyadınız:</label>
+                        <input type="text" class="form-control mb-3" name="surname" id="surname"
+                            placeholder="soyadınızı giriniz" autofocus="false" required="true" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control mb-3" name="email" id="email"
+                            placeholder="Email adresiniz giriniz" autofocus="false" required="true" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passwd">Şifreniz:</label>
+                        <input type="password" class="form-control mb-3" name="passwd" id="passwd"
+                            placeholder="passwd  giriniz" autofocus="false" required="true" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passwd"></label>
+                        <input type="reset" class="btn btn-danger" value="Temizle" />
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <!-- table -->
+    <!-- table Ödev: ID,Name, Surname, TCNumber 11haneli 123******41 createdDate: 01/15/2023 -->
+    <table class="table table-hover table-striped table-bordered table-dark table-sm" style="cursor: pointer;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Adı</th>
+                <th>Soyadı</th>
+                <th>Number</th>
+                <th>Update</th>
+                <th>Show</th>
+                <th>Delete </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Adı 1</td>
+                <td>Soyadı 1</td>
+                <td>Numara 1</td>
+                <th class="text-center"><i class="fa-solid fa-info text-primary"></i></th>
+                <th class="text-center"><i class="fa-solid fa-eye text-info"></i></th>
+                <th class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Adı 2</td>
+                <td>Soyadı 2</td>
+                <td>Numara 2</td>
+                <th class="text-center"><i class="fa-solid fa-info text-primary"></i></th>
+                <th class="text-center"><i class="fa-solid fa-eye text-info"></i></th>
+                <th class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></th>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Adı 3</td>
+                <td>Soyadı 3</td>
+                <td>Numara 3</td>
+                <th class="text-center"><i class="fa-solid fa-info text-primary"></i></th>
+                <th class="text-center"><i class="fa-solid fa-eye text-info"></i></th>
+                <th class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></th>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js">
+    </script>
+</body>
+
+</html>

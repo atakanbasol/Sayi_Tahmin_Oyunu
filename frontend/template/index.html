@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO -->
+    <meta name="title" content="blog" />
+    <meta name="description" content="java, springboot,html,css3,js,bootstrap" />
+    <meta name="author" content="Hamit Mızrak" />
+    <meta name="" content="" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Font awesome: CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- Google Font: CDN-->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> new WOW().init() </script>
+
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- jquery core and UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar_id">
+    <!-- start codes -->
+
+    <!-- navbar start -->
+    <nav id="navbar_id" class="fixed-top navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page"><i class="fa-solid fa-house"></i> <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Yetenek</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hakkımızda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">İletişim</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Login</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Login</a>
+                            <a class="dropdown-item" href="#">Register</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a onclick="darkLight()" class="nav-link" href="#"><i class="fa-solid fa-lightbulb"></i></a>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input type="text" id="tags" class="form-control me-sm-2" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- header start -->
+    <header id="header_id">
+        <div class="jumbotron text-white">
+            <div class="container">
+                <div class="p-5 text-center" id="header_sub">
+                    <h1 class="text-uppercase display-3 mb-5">Full Stack Kursumuza Hoşgeldiniz</h1>
+                    <h4>HTML5 CSS3- JS - BOOTSTRAP -JQUERY</h4>
+                    <a href="#!" target="_blank"><i class="fa-brands fa-blogger-b"></i></a>
+                    <a href="http://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"
+                            style="color:orange;"></i> </a>
+                    <a href="#!" target="_blank"><i class="fa-brands fa-github text-secondary"></i> </a>
+                    <a href="#!" target="_blank"><i class="fa-brands fa-youtube" style="color:red;"></i> </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main id="main_id">
+
+        <!-- main_company_information -->
+        <section id="main_company_information">
+            <div id="icon_message">
+                <h2 class="text-center text-uppercase">Yeteneklerimiz</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-3 text-center">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <h4>Taşıma</h4>
+                            <p class="line-clamp6">taşıma Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                                iure, distinctio porro corrupti ratione maiores exercitationem. Incidunt ducimus eius
+                                explicabo officiis earum et! Provident nostrum ipsam earum aliquam esse! Vitae!
+                                Dolores perspiciatis sequi cupiditate culpa! Temporibus veritatis ex nobis enim
+                                quisquam, tenetur exercitationem modi libero minus laudantium quos autem hic, quas eius.
+                                Accusamus corporis cupiditate modi ipsam? Provident, quaerat laudantium.
+                                Dolorum ex totam asperiores mollitia rem dolores, itaque eaque, magni obcaecati
+                                exercitationem amet minus dolor alias. Corrupti, quidem. Iure, recusandae temporibus
+                                dolores alias inventore voluptates pariatur dignissimos magnam enim nam?
+                                Magni omnis cupiditate quod in ullam explicabo soluta fuga impedit, corporis
+                                perferendis, molestias officia quam minima ad, quisquam iure dignissimos. Praesentium
+                                at, soluta necessitatibus rerum labore velit provident placeat. Nulla.</p>
+                        </div>
+
+                        <div class="col-12 col-md-3 text-center">
+                            <i class="fa-solid fa-gift text-warning"></i>
+                            <h4>Coupon</h4>
+                            <p class="line-clamp6">taşıma Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                                iure, distinctio porro corrupti ratione maiores exercitationem. Incidunt ducimus eius
+                                explicabo officiis earum et! Provident nostrum ipsam earum aliquam esse! Vitae!
+                                Dolores perspiciatis sequi cupiditate culpa! Temporibus veritatis ex nobis enim
+                                quisquam, tenetur exercitationem modi libero minus laudantium quos autem hic, quas eius.
+                                Accusamus corporis cupiditate modi ipsam? Provident, quaerat laudantium.
+                                Dolorum ex totam asperiores mollitia rem dolores, itaque eaque, magni obcaecati
+                                exercitationem amet minus dolor alias. Corrupti, quidem. Iure, recusandae temporibus
+                                dolores alias inventore voluptates pariatur dignissimos magnam enim nam?
+                                Magni omnis cupiditate quod in ullam explicabo soluta fuga impedit, corporis
+                                perferendis, molestias officia quam minima ad, quisquam iure dignissimos. Praesentium
+                                at, soluta necessitatibus rerum labore velit provident placeat. Nulla.</p>
+                        </div>
+
+
+                        <div class="col-12 col-md-3 text-center">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <h4>Taşıma</h4>
+                            <p class="line-clamp6">taşıma Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                                iure, distinctio porro corrupti ratione maiores exercitationem. Incidunt ducimus eius
+                                explicabo officiis earum et! Provident nostrum ipsam earum aliquam esse! Vitae!
+                                Dolores perspiciatis sequi cupiditate culpa! Temporibus veritatis ex nobis enim
+                                quisquam, tenetur exercitationem modi libero minus laudantium quos autem hic, quas eius.
+                                Accusamus corporis cupiditate modi ipsam? Provident, quaerat laudantium.
+                                Dolorum ex totam asperiores mollitia rem dolores, itaque eaque, magni obcaecati
+                                exercitationem amet minus dolor alias. Corrupti, quidem. Iure, recusandae temporibus
+                                dolores alias inventore voluptates pariatur dignissimos magnam enim nam?
+                                Magni omnis cupiditate quod in ullam explicabo soluta fuga impedit, corporis
+                                perferendis, molestias officia quam minima ad, quisquam iure dignissimos. Praesentium
+                                at, soluta necessitatibus rerum labore velit provident placeat. Nulla.</p>
+                        </div>
+
+
+                        <div class="col-12 col-md-3 text-center">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <h4>Taşıma</h4>
+                            <p class="line-clamp6">taşıma Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                                iure, distinctio porro corrupti ratione maiores exercitationem. Incidunt ducimus eius
+                                explicabo officiis earum et! Provident nostrum ipsam earum aliquam esse! Vitae!
+                                Dolores perspiciatis sequi cupiditate culpa! Temporibus veritatis ex nobis enim
+                                quisquam, tenetur exercitationem modi libero minus laudantium quos autem hic, quas eius.
+                                Accusamus corporis cupiditate modi ipsam? Provident, quaerat laudantium.
+                                Dolorum ex totam asperiores mollitia rem dolores, itaque eaque, magni obcaecati
+                                exercitationem amet minus dolor alias. Corrupti, quidem. Iure, recusandae temporibus
+                                dolores alias inventore voluptates pariatur dignissimos magnam enim nam?
+                                Magni omnis cupiditate quod in ullam explicabo soluta fuga impedit, corporis
+                                perferendis, molestias officia quam minima ad, quisquam iure dignissimos. Praesentium
+                                at, soluta necessitatibus rerum labore velit provident placeat. Nulla.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- counter -->
+        <section id="counter">
+            <div class="container">
+                <div class="counter_header">
+                    <h3>Proje bilgileri</h3>
+                    <p>Counter</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mx-auto text-center col-lg-3">
+                        <span>Saat</span> <br />
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="text-center ">+500</p>
+                    </div>
+
+                    <div class="col-md-6 mx-auto text-center col-lg-3">
+                        <span>Eleman sayısı</span> <br />
+                        <i class="fa-solid fa-barcode"></i>
+                        <p class="text-center ">+10</p>
+                    </div>
+
+                    <div class="col-md-6 mx-auto text-center col-lg-3">
+                        <span>Proje sayısı </span> <br />
+                        <i class="fa-solid fa-barcode"></i>
+                        <p class="text-center ">+80</p>
+                    </div>
+
+                    <div class="col-md-6 mx-auto text-center col-lg-3">
+                        <span>Müşteri sayısı</span> <br />
+                        <i class="fa-solid fa-user-clock"></i>
+                        <p class="text-center ">+15</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- parallax picture -->
+        <section class="main_parallax">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Parallax</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat vel et magnam quidem eveniet!
+                        Iusto ad eaque, dolore quo dicta odit magnam eius vel nisi dolores? Adipisci illum temporibus
+                        voluptate.
+                        Itaque voluptate quasi dolorum iusto amet quam officia laborum nesciunt pariatur placeat
+                        consequatur quod illo soluta a laudantium quo delectus id saepe accusamus enim, quisquam nam
+                        fugiat. Quo, ea expedita!
+                        Consequuntur itaque veniam doloribus recusandae officia nemo delectus possimus dolorem amet id
+                        eius expedita suscipit ducimus, magni quam earum. Facere non placeat consequuntur illo pariatur
+                        voluptatem, magni voluptatum? Rerum, suscipit!
+                        Quia placeat, enim illum repudiandae autem a quas eveniet rerum! Aspernatur, molestiae nulla sed
+                        dolores rem accusamus atque architecto corrupti, quam consequuntur tenetur sunt facere,
+                        voluptates est! Delectus, laudantium illum!</p>
+                    <div><button class="btn btn-outline-primary text-center">More</button></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- newspaper -->
+        <section class="main_newspaper">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <h2 class="text-center">Newspaper</h2>
+                        <p id="newspaper_id">Newspaper Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                            ea rerum laudantium iusto! Excepturi tempora id cupiditate sit, in enim quae nihil
+                            doloremque error repellendus nobis autem eaque perferendis rerum!
+                            Veritatis adipisci non earum quae odio doloremque maxime, voluptatum quaerat laudantium
+                            excepturi. A natus tenetur veritatis numquam consequatur. Deleniti repudiandae illo
+                            accusamus asperiores consectetur ullam odio non ipsum quia quasi?
+                            Nam distinctio facilis sit, commodi fugit mollitia sunt maxime ipsam quasi quia velit
+                            itaque, sed, tempore neque amet necessitatibus error saepe consectetur suscipit repellendus
+                            dolorem consequatur voluptates! Dolor, nisi ea.
+                            Illum commodi corrupti non, officia, ab vitae quaerat, tempora veniam quibusdam tempore a
+                            obcaecati ratione adipisci doloribus. Quasi molestias mollitia id culpa veritatis veniam
+                            temporibus aliquam, amet autem, esse nobis? ipsum dolor sit amet consectetur adipisicing
+                            elit. Placeat vel et
+                            magnam quidem eveniet! Iusto ad eaque, dolore quo dicta odit magnam eius vel nisi dolores?
+                            Adipisci illum temporibus voluptate.
+                            Itaque voluptate quasi dolorum iusto amet quam officia laborum nesciunt pariatur placeat
+                            consequatur quod illo soluta a laudantium quo delectus id saepe accusamus enim, quisquam nam
+                            fugiat. Quo, ea expedita!
+                            Consequuntur itaque veniam doloribus recusandae officia nemo delectus possimus dolorem amet
+                            id eius expedita suscipit ducimus, magni quam earum. Facere non placeat consequuntur illo
+                            pariatur voluptatem, magni voluptatum? Rerum, suscipit!
+                            Quia placeat, enim illum repudiandae autem a quas eveniet rerum! Aspernatur, molestiae nulla
+                            sed dolores rem accusamus atque architecto corrupti, quam consequuntur tenetur sunt facere,
+                            voluptates est! Delectus, laudantium illum! <br /> <a href="#!"
+                                class="btn btn-primary btn-sm">Read Me</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main_blog">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-uppercase text-center">Blog</h2>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog1.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-dark text-center">Title</h4>
+                                <p class="card-text text-dark">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog2.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-dark text-center">Title</h4>
+                                <p class="card-text text-dark">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog2.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-dark text-center">Title</h4>
+                                <p class="card-text text-dark">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog1.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-dark text-center">Title</h4>
+                                <p class="card-text text-dark">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog2.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-dark text-center">Title</h4>
+                                <p class="card-text text-dark">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog1.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-dark text-center">Title</h4>
+                                <p class="card-text text-dark">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog2.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-dark text-center">Title</h4>
+                                <p class="card-text text-dark">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog1.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title text-dark text-center">Title</h4>
+                                <p class="card-text text-dark">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- main end -->
+
+
+    <!-- back to top start -->
+    <a href="#header_id" id="back_top" class="btn btn-primary"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+    <!-- footer start -->
+    <footer id="footer_id">
+        <section id="footer_section">
+            <div class="container text-center text-md-start-mt-5">
+                <div class="row mt-4">
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 shadow">
+                        <h5 class="text-uppercase">
+                            <i class="fa-regular fa-building"></i>Company <br />
+                            <a href="tel:+901112223344">tel</a><br />
+                            <a href="tel:+901112223344">fax</a><br />
+                            <a href="mailto:hamitmizrak@gmail.com">mail</a><br />
+                        </h5>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 shadow">
+                        <h5 class="text-uppercase">
+                            <a href="">Yetenek</a>
+                            <a href="">Blog</a>
+                            <a href="">Hakkımızda</a>
+                            <a href="">İletişim</a>
+                        </h5>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 shadow">
+                        <h5 class="text-uppercase">
+                            <a href="">blog1</a>
+                            <a href="">blog2</a>
+                            <a href="">blog3</a>
+                            <a href="">blog4</a>
+                        </h5>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 shadow">
+                        <h5 class="text-uppercase">
+                            <a href="">blog1</a>
+                            <a href="">blog2</a>
+                            <a href="">blog3</a>
+                            <a href="">blog4</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer_copyright" class="text-center p-4">
+            &copy; 2022- <span id="next_year"></span> <a href="http://www.hamitmizrak.com.tr">Hamit Mızrak</a>
+        </section>
+    </footer>
+    <!-- footer end -->
+
+
+    <!-- end codes -->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <!-- external JS -->
+    <script src="js/template.js"></script>
+</body>
+
+</html>

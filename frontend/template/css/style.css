@@ -1,0 +1,232 @@
+/*
+    PROJECT
+        -name: My Web site
+        -created date: 5 Şubat 2023
+        -author: Hamit Mızrak
+        -version: V.1
+*/
+
+/*##################################################*/
+/*base configuration*/
+/*ROOT*/
+:root {
+    --template-bg: #271d1d;
+    --template-color: rgb(255, 255, 255);
+    --max-width: 100%;
+    --img-max-width: 100%;
+    --img-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .9);
+    --icon-size: 1.4rem;
+}
+
+/*##################################################*/
+/*COMMON*/
+* {
+    margin: 0 px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    transition: 1.2s all;
+}
+
+body {
+    /* font-family: 'Lora', serif;
+    font-family: 'Quicksand', sans-serif; */
+    font-size: 1.1rem;
+    background-color: var(--template-bg);
+    color: var(--template-color);
+    line-height: 1.5;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    text-align: justify!important;
+    padding:1.5rem;
+}
+
+img {
+    max-width: var(--img-max-width);
+}
+
+img:hover {
+    box-shadow: var(--img-box-shadow);
+    cursor: pointer;
+}
+
+i {
+    font-size: var(--icon-size);
+}
+
+.line-clamp4 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp6 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp8 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp10 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
+
+
+/*##################################################*/
+
+/* NAVBAR */
+/* dark Light Mode */
+.dark_mode{
+    background-color: var(--template-color);
+    color: var(--template-bg); 
+}
+
+/*##################################################*/
+
+/* HEADER */
+header{
+    margin-top: 3rem;
+    background-image: url('../img/header2.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 90vh;
+    z-index: -1;
+    padding-top:15rem;
+}
+
+#header_sub{
+    background-color: black;
+    opacity: 0.8;
+}
+#header_sub>a>i{
+margin-right: 1rem;
+font-size: 2rem;
+margin-top:2.5rem;
+}
+
+
+/*##################################################*/
+
+/*yetenekler*/
+#main_company_information{
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+/*counter*/
+#counter{
+    background-color: rgb(245, 242, 238);
+    color:black;
+    padding:1rem;
+    min-height: 30rem;
+    margin: 3rem auto;
+}
+
+#counter i{
+    font-size: 5rem;
+}
+
+.counter_header h3,p{
+    text-align: center;
+}
+
+
+/*parallax*/
+.main_parallax{
+    background-color: transparent;
+    background-image: url('../img/header1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top:-5rem;
+    height: 28rem;
+    padding: 2rem;
+    
+}
+
+
+/*newspaper*/
+.main_newspaper{
+    background-color: rgb(245, 242, 238);
+    color:black;
+    margin-top: 9rem;
+    text-indent: 2rem;
+    line-height: 2;
+}
+
+/*blog*/
+#main_blog{
+    position: relative;
+}
+
+#main_blog::before{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: "";
+    background-image: url("../img/header1.jpg");
+    background-size: contain;
+    opacity: .2;
+}
+
+#main_blog .card{
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+
+/*##################################################*/
+
+/* FOOTER */
+footer{
+    min-height: 25rem;
+    width: auto;
+    background-color: rgb(65, 61, 61);
+    color:white;
+
+}
+
+#footer_section{
+padding:3rem;
+}
+
+#footer_copyright{
+ 
+}
+
+/* back to top */
+#back_top{
+    position: fixed!important;
+    right: 0;
+    bottom: 0;
+}
+
+#back_top:hover{
+    opacity: .8;
+}

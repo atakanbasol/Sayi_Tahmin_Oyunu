@@ -1,0 +1,164 @@
+/* external css */
+
+*{
+    margin: 0px;
+    padding:0;
+    box-sizing: border-box; 
+    transition: all .7s;
+}
+
+
+
+#paragraf_id{
+  border:1px solid blue;
+}
+
+.paragraf_class2{
+    color:red;
+    color:#4510d8;
+    color:#563;
+    color:rgb(155,241,15);
+    color:rgba(16, 32, 177, 0.8);
+    color:rgba(255, 255, 255, .9);
+
+    background-color: black;
+
+    /* iç boşluk */
+    padding-top:12px;
+    padding-right:12px;
+    padding-bottom:12px;
+    padding-left:12px;
+    padding:12px;
+    padding:15px 20px;
+
+     /* dış boşluk */
+     margin-top:12px;
+     margin-right:12px;
+     margin-bottom:12px;
+     margin-left:12px;
+     margin:12px;
+     margin:15px 20px;
+
+     border:2px solid rgb(155,241,15);
+     box-shadow: .8px .5px 8px 1px rgba(0,0,0,.8);
+
+     cursor:pointer!important;
+     
+     width: 150px;
+     min-width: 150px;
+     max-width: 150px;
+
+     height: 100px;
+     min-height: 100px;
+     max-height: 100px;
+
+     font-size: 8px!important;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 200;
+
+     text-align: justify;
+     text-align: left;
+     text-align: right;
+     text-align: center;
+
+     text-decoration: line-through;
+     text-decoration: underline;
+     text-decoration: none;
+
+     text-transform: uppercase;
+     text-transform: lowercase;
+     text-transform: none;
+     text-transform: capitalize;
+
+     text-shadow: 0.2px .2px white;
+     
+     letter-spacing: .1px;
+     word-spacing: 1px;
+     line-height: 8px;
+
+     display: inline;
+     display: block;
+     display:none;
+     display: inline-block;
+}
+
+/* visibility ile display arasındaki fark  */
+/* span ile div arasındaki fark */
+
+a{
+    text-decoration: none;
+    border:1px solid #000fff;
+    margin:2%;
+    padding:2%;
+    background-color: black;
+    color:white;
+    
+}
+
+a:hover{
+    background-color: white;
+    color:black;
+    text-transform: capitalize;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+   
+}
+
+img:hover{
+    box-shadow: .8px .5px 8px 1px rgba(0,0,0,.8);
+}
+
+/* list */
+ul{
+    margin-left:8%;
+    list-style-type: none;
+}
+
+ul li{
+  display: inline-block; 
+  border: 1px solid red; 
+  background-color: #4510d8;
+  color:white;
+  text-transform: uppercase;
+  padding:2% 3px 1.5% 4px;
+
+}
+
+/*li hover: ödev*/
+ul li:hover{
+
+}
+
+#div_id img{
+float: left;
+width: 50%;
+
+border-top-left-radius: 12%;
+border-bottom-right-radius: 12%;
+}
+#div_id p{
+    padding-left:10px;
+}
+
+.clear_fix::before{
+content: "";
+clear: both;
+display: block;
+}
+#my_special_table{
+    border: 1px solid green;
+    width: 100%;
+}
+
+#my_special_table thead tr th{
+    text-transform: uppercase;
+    background-color: aqua;
+    opacity: .5;
+}
+
+#my_special_table tbody tr td{
+    text-indent: 6px;
+}
