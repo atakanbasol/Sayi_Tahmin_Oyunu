@@ -1,4 +1,4 @@
-package com.hamitmizrak.ecodationblogproject7;
+package com.atakanbasol.sayitahminoyunu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,13 +24,13 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 }
 )
 //@SpringBootApplication
-public class EcodationBlogProject7Application {
+public class SayiTahminOyunu {
 
     public static void main(String[] args) {
 
         //Disables headless JOptionPane
         System.setProperty("java.awt.headless", "false");
 
-        SpringApplication.run(EcodationBlogProject7Application.class, args);
+        SpringApplication.run(SayiTahminOyunu.class, args);
     }
 }
